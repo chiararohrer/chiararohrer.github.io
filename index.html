@@ -1,43 +1,72 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <head>
-      <meta charset="UTF-8">
-        <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-        <style>
-          .button {
-            color: white;
-            padding: 8px 10px;
+    <title>Your Page Title</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <style>
+        body {
+            font-family: 'Verdana', monospace;
+            background-color: black;
+            color: #fff;
+            margin: 0;
+            padding: 20px;
             text-align: center;
+        }
+
+        h1 {
+            color: white;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .linkedin-button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            margin-top: 20px;
             text-decoration: none;
             display: inline-block;
-            font-size: 12px;
-            margin: 4px 2px;
-            cursor: pointer;
-          }
-          
-          .button1 {
-            background-color: white;
-            color: #3784dd;
-            border: 1px solid #3784dd;
-          }
+            border-radius: 5px;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
 
-          .button1:hover {
-            background-color: #3784dd;
-            color: white;
-          }
-          </style>
-    </head>
-    <nav class="menu">
-      <p style="font-family:verdana;">path: <a href="index.html">home</a></p>
-    </nav>
-    <body>
-      <title>Chiara's homepage</title>
-      <h2 style="font-family:verdana;">Chiara's homepage</h2>
-      <p style="font-family:verdana;">Hi! This page is under construction.</p>
-      <button class="button button1" style="font-family:verdana;" onclick="window.location.href='https://www.linkedin.com/in/chiara-rohrer-819643249';" >LinkedIn</button>
-    </body>
-    <footer>
-      <small><p style="font-family:verdana;">2023 Chiara Rohrer</p></small>
-    </footer>
+        .linkedin-button:hover {
+            background-color: #0056b3; /* Darker shade for the hover effect */
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .linkedin-logo {
+            width: 20px; /* Adjust the size as needed */
+            height: auto;
+            margin-right: 5px;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+
+<!-- <nav class="menu">
+  <p style="font-family:verdana;">path: <a href="index.html">home</a></p>
+</nav>
+<body> -->
+    <h1>Chiara's Website</h1>
+    <p>Hi! This page is under construction.</p>
+    
+    <!-- LinkedIn Profile Button with Logo -->
+    <a href='https://www.linkedin.com/in/chiara-rohrer-819643249' target="_blank" class="linkedin-button">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/76/Font_Awesome_5_brands_linkedin.svg" alt="LinkedIn Logo" class="linkedin-logo">
+    LinkedIn
+    </a>
+</body>
+<footer>
+  <small><p style="font-family:verdana;">2023 Chiara Rohrer</p></small>
+</footer>
 </html>
